@@ -74,19 +74,19 @@ I think being able to work effectively with AI coding tools is an important skil
 
 ## Results
 
-Training ran for 5 epochs on CPU (~45 minutes on an Intel Mac). Loss dropped from ~10.9 → 3.58 (train) by the final epoch.
+Training ran for 5 epochs on CPU across two runs as the corpus was expanded. Final run used ~3.5M characters (100+ articles). Train loss dropped from ~10.9 → 3.19, val loss from ~6.5 → 4.18.
 
 ![Training loss curve](loss.png)
 
-**Generated text progression** — same prompt `"Lewis Hamilton won the"` after each epoch:
+**Generated text progression** — prompt `"Lewis Hamilton won the"` after each epoch:
 
 | Epoch | Output |
 |---|---|
-| 1 | *"...the race, and the race, and the season."* |
-| 3 | *"...the race. He finished second in the race. He finished second..."* |
-| 5 | *"...the Drivers' Championship... Formula One World Championship... most wins in the first time since..."* |
+| 1 | *"...the race."* |
+| 3 | *"...the race, and Verstappen finished fifth in the Drivers' Championship. Räikkönen was classified as a race in the season..."* |
+| 5 | *"...the Drivers' Championship... In the first race of the season, Hamilton won the championship... Mercedes driver Sebastian Vettel winning"* |
 
-By epoch 5 the model is producing recognizable F1 vocabulary and sentence structures — championship terminology, driver stats language — entirely from a ~30M parameter model trained on Wikipedia text.
+By epoch 5 the model correctly names real drivers, references real championship structures, and produces recognizable F1 sentence patterns — from a ~30M parameter model trained entirely on Wikipedia text.
 
 ---
 
