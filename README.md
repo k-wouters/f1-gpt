@@ -68,7 +68,7 @@ This project was built interactively with [Claude Code](https://claude.ai/claude
 - **Write and review code** — the training loop, data collection script, and model configuration
 - **Make informed trade-offs** — e.g., reducing model size from 124M to 30M parameters to make CPU training feasible without sacrificing meaningful learning
 
-I think being able to work effectively with AI coding tools is an important skill for any engineer in 2025 — this project is a demonstration of that alongside the underlying ML knowledge.
+I think being able to work effectively with AI coding tools is an important skill for any engineer in 2026 — this project is a demonstration of that alongside the underlying ML knowledge.
 
 ---
 
@@ -78,11 +78,3 @@ I think being able to work effectively with AI coding tools is an important skil
 - [PyTorch](https://pytorch.org/)
 - [tiktoken](https://github.com/openai/tiktoken) — OpenAI's BPE tokenizer
 - [Wikipedia-API](https://github.com/martin-majlis/Wikipedia-API)
-
----
-
-## About me
-
-I'm a student at the University of Maryland interested in ML engineering and AI systems. I'm currently looking for software engineering internships where I can apply these skills to real problems.
-
-📫 [GitHub](https://github.com/k-wouters)
