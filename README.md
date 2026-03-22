@@ -72,6 +72,24 @@ I think being able to work effectively with AI coding tools is an important skil
 
 ---
 
+## Results
+
+Training ran for 5 epochs on CPU (~45 minutes on an Intel Mac). Loss dropped from ~10.9 → 3.58 (train) by the final epoch.
+
+![Training loss curve](loss.png)
+
+**Generated text progression** — same prompt `"Lewis Hamilton won the"` after each epoch:
+
+| Epoch | Output |
+|---|---|
+| 1 | *"...the race, and the race, and the season."* |
+| 3 | *"...the race. He finished second in the race. He finished second..."* |
+| 5 | *"...the Drivers' Championship... Formula One World Championship... most wins in the first time since..."* |
+
+By epoch 5 the model is producing recognizable F1 vocabulary and sentence structures — championship terminology, driver stats language — entirely from a ~30M parameter model trained on Wikipedia text.
+
+---
+
 ## Built on
 
 - [Build a Large Language Model From Scratch](https://github.com/rasbt/LLMs-from-scratch) by Sebastian Raschka — the GPT model architecture in `gpt_model.py` is adapted from this book's codebase
