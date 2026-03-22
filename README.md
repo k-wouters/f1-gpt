@@ -74,7 +74,7 @@ I think being able to work effectively with AI coding tools is an important skil
 
 ## Results
 
-Training ran for 5 epochs on CPU across two runs as the corpus was expanded. Final run used ~3.5M characters (100+ articles). Train loss dropped from ~10.9 → 3.19, val loss from ~6.5 → 4.18.
+Training ran for 5 epochs on CPU across two runs as the corpus was expanded. Final run used ~3.5M characters (100+ articles). Train loss dropped from ~6.6 → 3.19, val loss from ~6.5 → 4.18.
 
 ![Training loss curve](loss.png)
 
